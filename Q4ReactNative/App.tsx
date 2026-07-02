@@ -1,8 +1,8 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import styles from "./style";
-import data from './Data';
-import Square from './Square';
+import styles from "./Q4/style";
+import data from './Q4/Data';
+import Square from './Q4/Square';
 
 export default function App() {
   return (
