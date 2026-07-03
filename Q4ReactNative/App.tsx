@@ -1,15 +1,21 @@
-import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native";
-import styles from "./Q4/style";
-import data from './Q4/Data';
-import Square from './Q4/Square';
+import EmployeeForm from "./Q6/EmployeeForm";
+import DigitSum from "./Q6/DigitSum";
+import MinimumFind from "./Q6/MinimumFinder";
+import Hailstone from "./Q6/Hailstone";
 
 export default function App() {
-  return (
-    <ScrollView style={styles.container}>
-      {data.map((item, index) => (
-        <Square key={item} text={`Square ${index + 1}`} />
-      ))}
-    </ScrollView>
-  );
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <ScrollView contentContainerStyle={{ padding: 16 }}>
+                {/* <EmployeeForm /> */}
+
+                {/* Uncomment to test other exercises */}
+                {/* <DigitSum /> */}
+                {/* <MinimumFind /> */}
+                <Hailstone />
+            </ScrollView>
+        </SafeAreaView>
+    );
 }
